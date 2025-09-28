@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - L & S Scientific</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Same header -->
+        <nav class="nav-container">
+            <div class="logo">L & S Scientific</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-hero">
+            <h1>Our Product Catalog</h1>
+            <p>Browse our range of medical consumables.</p>
+        </section>
+
+        <div class="category-filter">
+            <button onclick="filterProducts('all')" class="active">All</button>
+            <button onclick="filterProducts('printer')">Printer Supplies</button>
+            <button onclick="filterProducts('diagnostic')">Diagnostic Kits</button>
+        </div>
+
+        <section class="product-grid" id="product-grid">
+            <div class="product-card" data-category="printer">
+                <img src="images/upp-110hg.jpg" alt="UPP-110HG">
+                <h3>UPP-110HG</h3>
+                <p>Ultrasound thermal paper, 110mm x 18m. Pack of 10.</p>
+                <p class="price">Ksh 12,000</p>
+            </div>
+            <div class="product-card" data-category="printer">
+                <img src="images/upp-110s.jpg" alt="UPP-110S">
+                <h3>UPP-110S</h3>
+                <p>Standard thermal rolls for medical printers. Pack of 12.</p>
+                <p class="price">Ksh 850</p>
+            </div>
+            <div class="product-card" data-category="diagnostic">
+                <img src="images/malaria-pvpf.jpg" alt="Malaria PVPF">
+                <h3>Malaria PVPF Test Kit</h3>
+                <p>Rapid test for Pv/Pf antigens. 25 tests per kit.</p>
+                <p class="price">Ksh 800</p>
+            </div>
+            <div class="product-card" data-category="diagnostic">
+                <img src="images/hpylori.jpg" alt="Hpylori">
+                <h3>Hpylori Antigen Test</h3>
+                <p>Detect H. pylori in stool samples. 20 tests per kit.</p>
+                <p class="price">Ksh 1,700</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer -->
+        <div class="footer-content">
+            <p>&copy; 2025 L & S Scientific. All rights reserved.</p>
+            <ul class="footer-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>Gaberone Plaza, 5th Floor Shop B12</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
